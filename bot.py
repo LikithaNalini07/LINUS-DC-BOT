@@ -24,5 +24,5 @@ async def on_ready():
 async def hello(interaction: discord.Interaction):
     await interaction.response.send_message("Hello! 👋")
 
-
+print("DEBUG TOKEN VALUE:", repr(os.getenv("DISCORD_TOKEN")))
 bot.run(os.getenv("DISCORD_TOKEN"))
